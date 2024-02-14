@@ -8,7 +8,7 @@ returns its closest minor integer value.
 
 def floor(n: float) -> int:
     """
-    Returns the floor of the input float.
+    Returns the closest minor integer value of the input float.
 
     Parameters:
         n (float): The input float.
