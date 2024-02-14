@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import math
 """
 This function takes a float as input and
 returns its closest minor integer value.
 """
+import math
 
 
 def floor(n: float) -> int:
