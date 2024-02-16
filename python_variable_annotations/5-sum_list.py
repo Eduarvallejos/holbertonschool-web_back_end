@@ -1,4 +1,4 @@
-#!/user/bin/env python3
+#!/usr/bin/env python3
 """
 This script defines a type-annotated function 'sum_list'
 that takes an 'imput_list' list of floats as arguments and
