@@ -1,3 +1,4 @@
 //This script lists the documents of a collection with coincidences
 
-db.school.find({name:"holberton school"})
+
+db.school.find({name:"Holberton school"})
