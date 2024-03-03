@@ -19,6 +19,6 @@ def insert_school(mongo_collection, **kwargs):
             This includes information about the inserted document,
             such as its ID.
     """
-    insert_doc = mongo_collection.insert_one(kwargs)
+    insert_doc = mongo_collection.insert_one(kwargs).inserted_id
 
     return insert_doc
