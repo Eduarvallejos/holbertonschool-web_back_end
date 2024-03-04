@@ -5,33 +5,29 @@ from pymongo import MongoClient
 
 if __name__ == "__main__":
     """Connect to MongoDB"""
-    client = MongoClient("mongodb://127.0.0.1:27017")
-    database = client["logs"]
-    collection = database["nginx"]
+    client = MongoClient('mongodb://127.0.0.1:27017')
+    database = client['logs']
+    collection = database['nginx']
 
     """Count total number of documents in collection"""
     total_doc = collection.count_documents({})
+    """Count number of documents with method=GET and path=/status"""
     status_count = collection.count_documents(
         {"method": "GET", "path": "/status"})
 
     """Count number of documents for each HTTP method"""
     methods = [
-        "GET",
-        "POST",
-        "PUT",
-        "PATCH",
-        "DELETE"
-        ]
-    method_stats = {}
-    for method in methods:
-        method_count = collection.count_documents({"method": method})
-        method_stats[method] = method_count
+        {"method": "GET"},
+        {"method": "POST"},
+        {"method": "PUT"},
+        {"method": "PATCH"},
+        {"method": "DELETE"},
+    ]
+    totales = [collection.count_documents(method) for method in methods]
 
-    """Count number of documents with method=GET and path=/status"""
 
-    print(f"{total_doc} logs")
-    print("Methods:")
-    for method, count in method_stats.items():
-        print(f"\tmethod {method}: {count}")
-    print(f"{status_count} status check")
-    
+    print(f'{total_doc} logs')
+    print('Methods:')
+    for i, t in enumerate(totales):
+        print(f'\tmethod {methods[i].get("method")}: {t}')
+    print(f'{status_count} status check')
