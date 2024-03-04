@@ -6,8 +6,8 @@ from pymongo import MongoClient
 if __name__ == "__main__":
     """Connect to MongoDB"""
     client = MongoClient('mongodb://127.0.0.1:27017')
-    database = client['logs']
-    collection = database['nginx']
+    db = client['logs']
+    collection = db['nginx']
 
     """Count total number of documents in collection"""
     total_doc = collection.count_documents({})
