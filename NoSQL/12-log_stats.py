@@ -3,7 +3,7 @@
 from pymongo import MongoClient
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     """Connect to MongoDB"""
     client = MongoClient('mongodb://127.0.0.1:27017')
     db = client['logs']
@@ -13,7 +13,7 @@ if __name__ == "__main__":
     total_doc = collection.count_documents({})
     """Count number of documents with method=GET and path=/status"""
     status_count = collection.count_documents(
-        {"method": "GET", "path": "/status"})
+        {"path": "/status"})
 
     """Count number of documents for each HTTP method"""
     methods = [
