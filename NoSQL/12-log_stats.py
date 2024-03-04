@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 if __name__ == "__main__":
     """Connect to MongoDB"""
-    client = MongoClient("mongodb://localhost:27017/")
+    client = MongoClient("mongodb://127.0.0.1:27017")
     database = client["logs"]
     collection = database["nginx"]
 
