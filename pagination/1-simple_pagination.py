@@ -9,8 +9,10 @@ from typing import List
 index_range = __import__('0-simple_helper_function').index_range
 
 
-# Define a function to verify that a number is a positive intege
 def verify_enter_positive(num) -> None:
+    """
+    Define a function to verify that a number is a positive intege
+    +"""
     assert isinstance(num, int) and num > 0, AssertionError
 
 
@@ -50,4 +52,5 @@ class Server:
         verify_enter_positive(page_size)
 
         start_index, end_index = index_range(page, page_size)
+
         return self.dataset()[start_index: end_index]
