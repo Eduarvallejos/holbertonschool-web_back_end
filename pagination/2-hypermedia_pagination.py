@@ -55,7 +55,6 @@ class Server:
 
         return self.dataset()[start_index: end_index]
 
-
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Any]:
         """
         Returns a dictionary containing hyperlinked pagination information.
@@ -67,13 +66,13 @@ class Server:
         Returns:
             dict: A dictionary containing pagination information.
         """
-        
+
         page_data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
-        
+
         next_page = page + 1 if page < total_pages else None
         prev_page = page - 1 if page > 1 else None
-        
+
         return {
             'page_size': len(page_data),
             'page': page,
