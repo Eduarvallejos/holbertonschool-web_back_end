@@ -7,6 +7,8 @@ export default class Airport {
   }
 
   // toString method definition
-  // Returns a string representation of the Airport objec
-  
+  toString() {
+    // Returns a string representation of the Airport objec
+    return `[object ${this._code}]`;
+  }
 }
