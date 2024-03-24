@@ -7,7 +7,7 @@ export default class Airport {
   }
 
   // toString method definition
-  toString() {
+  toStringTag() {
     // Returns a string representation of the Airport objec
     return `[objeto ${this._code}]`;
   }
