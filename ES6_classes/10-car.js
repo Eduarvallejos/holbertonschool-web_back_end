@@ -22,9 +22,10 @@ export default class Car {
     return this._color;
   }
 
+  // Method to clone a Car object
   cloneCar() {
-    // Method to clone a Car object
-    const newCar = new Car(this._brand, this._motor, this._color); // Copiar los valores de atributos
+    // Copiar los valores de atributos
+    const newCar = new Car(this._brand, this._motor, this._color);
     // Set the prototype of the new object
     Object.setPrototypeOf(newCar, Object.getPrototypeOf(this));
     return newCar; // Return the cloned new object
