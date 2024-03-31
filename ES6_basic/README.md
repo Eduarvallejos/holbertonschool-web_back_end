@@ -10,8 +10,9 @@
 4. [Parameter defaults](#Parameter-defaults)
 5. [Template Literals](#template-literals)
 6. [Destructuring](#destructuring)
-7. [Rest Parameters y Spread Operator](#rest-parameters-y-spread-operator)
-8. [Promesas](#promesas)
+7. [Rest Parameters](#rest-parameters)
+8. [Spread Operator](#spread-operator)
+9. [Promesas](#promesas)
 
 ## Introducción a ES6
 
