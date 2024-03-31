@@ -7,10 +7,11 @@
 1. [Introducción a ES6](#introducción-a-es6)
 2. [Variables: let y const](#variables-let-y-const)
 3. [Arrow Functions](#arrow-functions)
-4. [Template Literals](#template-literals)
-5. [Destructuring](#destructuring)
-6. [Rest Parameters y Spread Operator](#rest-parameters-y-spread-operator)
-7. [Promesas](#promesas)
+4. [Parameter defaults](#Parameter defaults)
+5. [Template Literals](#template-literals)
+6. [Destructuring](#destructuring)
+7. [Rest Parameters y Spread Operator](#rest-parameters-y-spread-operator)
+8. [Promesas](#promesas)
 
 ## Introducción a ES6
 
@@ -30,6 +31,19 @@ console.log(x); // Imprime 20
 const y = 30;
 // y = 40; // Esto daría un error, no se puede reasignar una constante
 console.log(y); // Imprime 30
+```
+
+## Parameter defaults
+
+ES6 permite asignar valores por defecto a los parámetros (`Parameter defaults`) de una función, lo que significa que si un argumento no se pasa a la función, se utilizará el valor por defecto especificado.
+
+```javascript
+function saludar(nombre = 'Usuario') {
+    console.log(`¡Hola, ${nombre}!`);
+}
+
+saludar(); // Salida: ¡Hola, Usuario!
+saludar('Pedro'); // Salida: ¡Hola, Pedro!
 ```
 
 ## Arrow Functionst
