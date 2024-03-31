@@ -7,7 +7,7 @@
 1. [Introducción a ES6](#introducción-a-es6)
 2. [Variables: let y const](#variables-let-y-const)
 3. [Arrow Functions](#arrow-functions)
-4. [Parameter defaults](#Parameter defaults)
+4. [Parameter defaults](#Parameter-defaults)
 5. [Template Literals](#template-literals)
 6. [Destructuring](#destructuring)
 7. [Rest Parameters y Spread Operator](#rest-parameters-y-spread-operator)
