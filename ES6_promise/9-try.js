@@ -1,4 +1,4 @@
-export default function guardrail (mathFunction) {
+export default function guardrail(mathFunction) {
   // Create an array to store the values and messages.
   const queue = [];
 
