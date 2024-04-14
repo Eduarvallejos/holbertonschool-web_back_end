@@ -1,9 +1,9 @@
 export default function signUpUser(firstName, lastName) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     // Create an object with the given first and last name
     const user = {
       firstName,
-      lastName
+      lastName,
     };
     // Resolve the promise with the created object
     resolve(user);
