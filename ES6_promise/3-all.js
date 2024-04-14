@@ -4,7 +4,7 @@ import { uploadPhoto, createUser } from './utils';
 // Define the handleProfileSignup function
 export default function handleProfileSignup() {
   // Promise.all is used to wait for the resolution of both promises
-  Promise.all([uploadPhoto(), createUser()])
+  return Promise.all([uploadPhoto(), createUser()])
     .then((results) => {
       // Destructure the results to access the body of each response
       const [photoResult, userResult] = results;
