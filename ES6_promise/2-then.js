@@ -1,8 +1,7 @@
 // This script adds three handlers to the function
-export default function handleResponseFromAPI (promise) {
+export default function handleResponseFromAPI(promise) {
   return promise
-    .then(() => {
-      return { status: 200, body: 'success' };
+    .then(() => { return { status: 200, body: 'success' };
     })
     .catch(() => new Error())
     .finally(() => {
