@@ -1,6 +1,6 @@
 // returns an updated map for all items with an initial quantity of 1.
 
-export default function updateUniqueItems (map) {
+export default function updateUniqueItems(map) {
   // Check if the argument is a Map
   if (!(map instanceof Map)) {
     throw new Error('Cannot process');
