@@ -1,3 +1,4 @@
+
 # Manipulación de datos en ES6
 
 La manipulación de datos en ECMAScript 6 (ES6) ha sido mejorada con la introducción de una serie de características nuevas y útiles. Estas características hacen que trabajar con datos en JavaScript sea más eficiente y legible. En este documento, exploraremos algunas de estas características y cómo se pueden utilizar para manipular datos de manera efectiva.
@@ -5,13 +6,15 @@ La manipulación de datos en ECMAScript 6 (ES6) ha sido mejorada con la introduc
 ---
 ## Contenido
 
-1. [Métodos de Arrays: `map()`, `filter()` y `reduce()`](#Métodos-de-Arrays:-`-map()-`-,-`-filter()-`-y-`-reduce()-`)
+1. [Métodos de Arrays](#Métodos-de-Arrays)
 2. [Typed Arrays](#Typed-Arrays)
-3. [Estructuras de datos: `set`, `Map` y `WeakMap`](#Estructuras-de-datos:-`-set-`,-`-Map-`-y-`-WeakMap-`)
+3. [Estructuras de datos](#Estructuras-de-datos)
 
 ---
 
-## Métodos de Arrays: `map()`, `filter()` y `reduce()`
+## Métodos de Arrays
+
+### `map()`, `filter()` y `reduce()`
 
 Los métodos `map()`, `filter()` y `reduce()` son fundamentales para manipular arrays en JavaScript.
 
@@ -74,7 +77,9 @@ int8Array[2] = 30;
 console.log(int8Array); // Output: Int8Array [10, 20, 30]
 
 ```
-## Estructuras de datos: `set`, `Map` y `WeakMap`
+## Estructuras de datos
+
+### `set`, `Map` y `WeakMap`
 
 - **`set`:**: El objeto Set en JavaScript es una colección de valores únicos, lo que significa que no puede contener duplicados.
 
@@ -130,3 +135,4 @@ console.log(weakMap.has(objetoClave)); // Salida: false
 
 ```
 Estas características de ES6 proporcionan herramientas poderosas para manipular datos de manera efectiva en JavaScript. Al utilizar métodos de arrays, arrays tipados y estructuras de datos como Set, Map y WeakMap, puedes escribir código más limpio, eficiente y legible para manipular datos en tus aplicaciones JavaScript.
+
