@@ -5,9 +5,9 @@ La manipulación de datos en ECMAScript 6 (ES6) ha sido mejorada con la introduc
 ---
 ## Contenido
 
-1. [Métodos de Arrays](#Métodos-de-Arrays)
+1. [Métodos de Arrays: `map()`, `filter()` y `reduce()`](#Métodos-de-Arrays:-`map()`-,-`filter()`-y-`reduce()`)
 2. [Typed Arrays](#Typed-Arrays)
-3. [Estructuras de datos](#Estructuras-de-datos)
+3. [Estructuras de datos: `set`, `Map` y `WeakMap`](#Estructuras-de-datos:-`set`,-`Map`-y-`WeakMap`)
 
 ---
 
