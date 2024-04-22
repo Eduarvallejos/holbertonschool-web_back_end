@@ -1,22 +1,25 @@
-// This script returns a string of all set values ​​starting with a specific string (startString)
-export default function cleanSet (set, startString) {
-  // Initialize an empty array to store the filtered elements
-  const filterValues = [];
+// This script returns a string of all set values starting with a specific string (startString).
 
-  // Check if startString is undefined
-  const isStartStringUndefined = typeof startString === 'undefined';
+export default function cleanSet(set, startString = '') {
+  // Initialize an empty array to store filtered values
+  const filteredValues = [];
+
+  if (startString === '') {
+    // Return an empty string if startString has no value
+    return '';
+  }
 
   // Iterate over each value in the set
   for (const value of set) {
-    // If startString is undefined or the value starts with startString
-    if (isStartStringUndefined || value.startsWith(startString)) {
-      // Add the rest of the string to the filterValues array
-      filterValues.push(value.slice(startString?.length));
+    // Check if the value starts with the specified startString
+    if (value.startsWith(startString)) {
+      // Append the rest of the string to the filteredValues array
+      filteredValues.push(value.slice(startString.length));
     }
   }
 
-  // Join the filtered elements with the separator '-' to form the result string
-  const result = filterValues.join('-');
+  // Join the filtered values with '-' separator to form the result string
+  const result = filteredValues.join('-');
 
   return result;
 }
