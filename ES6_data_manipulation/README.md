@@ -1,5 +1,5 @@
 
-# Manipulación de datos en ES6
+# ES6 data manipulation
 
 La manipulación de datos en ECMAScript 6 (ES6) ha sido mejorada con la introducción de una serie de características nuevas y útiles. Estas características hacen que trabajar con datos en JavaScript sea más eficiente y legible. En este documento, exploraremos algunas de estas características y cómo se pueden utilizar para manipular datos de manera efectiva.
 
@@ -81,7 +81,7 @@ console.log(int8Array); // Output: Int8Array [10, 20, 30]
 
 ### `set`, `Map` y `WeakMap`
 
-- **`set`:**: El objeto Set en JavaScript es una colección de valores únicos, lo que significa que no puede contener duplicados.
+- **`set`:** El objeto Set en JavaScript es una colección de valores únicos, lo que significa que no puede contener duplicados.
 
 ```javascript
 // Crear un nuevo conjunto
